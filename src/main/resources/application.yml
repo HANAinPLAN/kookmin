@@ -6,7 +6,7 @@ spring:
     name: kookmin-bank-server
   
   datasource:
-    url: jdbc:mysql://localhost:3309/kookmin_bank?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: ${MYSQL_URL}
     username: ${MYSQL_USER}
     password: ${MYSQL_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
